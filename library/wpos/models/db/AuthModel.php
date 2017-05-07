@@ -70,6 +70,7 @@ class AuthModel extends DbConfig
         $sql          = 'SELECT id, username, password AS hash, admin, permissions, disabled FROM auth WHERE (username=:username AND password=:password);';
         $placeholders = ["username"=>$username, "password"=>$password];
         $users        = $this->select($sql, $placeholders);
+		//Logger::write("sql: ".$sql."\nusers: ".implode(",",$users), "AUTHMODEL", null, false);
         if (count($users) > 0) {
             $user = $users[0];
             if ($user['disabled']==1){

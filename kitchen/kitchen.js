@@ -377,7 +377,7 @@ function WPOSKitchen() {
     function initDataSuccess(loginloader){
         if (loginloader){
             setLoadingBar(100, "Initializing the awesome...");
-            $("title").text("WallacePOS - Your POS in the cloud");
+            $("title").text("WebPOS - Your POS in the cloud");
             WPOS.initPlugins();
             setTimeout('$("#modaldiv").hide();', 500);
         }

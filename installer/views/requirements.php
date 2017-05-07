@@ -26,7 +26,7 @@
         <ul class="list-unstyled spaced">
             <li>
                 <i class="icon icon-large icon-check <?php echo($deps['app_root']?"green":"red"); ?>"></i>
-                <?php echo("Correct Application Root".($deps['app_root']?"":"<br/><small>WallacePOS must be installed in the root directory of it's own virtual host</small>")); ?>
+                <?php echo("Correct Application Root".($deps['app_root']?"":"<br/><small>WebPOS must be installed in the root directory of it's own virtual host</small>")); ?>
             </li>
             <li>
                 <i class="icon icon-large icon-check <?php echo($deps['apache']?"green":"red"); ?>"></i>

@@ -378,7 +378,7 @@ function WPOSPrint(kitchenMode) {
         var printer = getPrintSetting('reports', 'printer');
         switch (getPrintSetting('reports', 'method')) {
             case "br":
-                browserPrintHtml($("#reportcontain").html(), 'WallacePOS Report', 600, 800);
+                browserPrintHtml($("#reportcontain").html(), 'WebPOS Report', 600, 800);
                 break;
             case "qz":
                 alert("QZ-Print integration is no longer available, switch to the new webprint applet");
@@ -431,7 +431,7 @@ function WPOSPrint(kitchenMode) {
         var method = getPrintSetting(printer, 'method');
         switch (method) {
             case "br":
-                browserPrintHtml("<pre style='text-align: center; background-color: white;'>" + text + "</pre>", 'WallacePOS Receipt', 310, 600);
+                browserPrintHtml("<pre style='text-align: center; background-color: white;'>" + text + "</pre>", 'WebPOS Receipt', 310, 600);
                 return true;
             case "qz":
                 alert("QZ-Print integration is no longer available, switch to the new webprint applet");
@@ -455,9 +455,9 @@ function WPOSPrint(kitchenMode) {
         switch (method) {
             case "br":
                 if (curset.printinv) {
-                    browserPrintHtml(getHtmlReceipt(record, false, true), 'WallacePOS Invoice', 600, 800);
+                    browserPrintHtml(getHtmlReceipt(record, false, true), 'WebPOS Invoice', 600, 800);
                 } else {
-                    browserPrintHtml(getHtmlReceipt(record, false), 'WallacePOS Receipt', 310, 600);
+                    browserPrintHtml(getHtmlReceipt(record, false), 'WebPOS Receipt', 310, 600);
                 }
                 return true;
             case "qz":

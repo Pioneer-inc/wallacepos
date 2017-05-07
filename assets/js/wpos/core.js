@@ -486,7 +486,7 @@ function WPOS() {
     function initDataSuccess(loginloader){
         if (loginloader){
             setLoadingBar(100, "Massaging the data...");
-            $("title").text("WallacePOS - Your POS in the cloud");
+            $("title").text("WebPOS - Your POS in the cloud");
             WPOS.initPlugins();
             populateDeviceInfo();
             setTimeout(hideLogin, 500);

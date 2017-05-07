@@ -166,7 +166,7 @@ function addAnalytics($type){
     curl_setopt_array($curl, array(
         CURLOPT_RETURNTRANSFER => 1,
         CURLOPT_URL => 'https://admin.wallaceit.com.au/customerapi/stats/add/'.$type.'?hostname='.$_SERVER['SERVER_NAME'].'&version='.(isset($_REQUEST['version']) ? $_REQUEST['version'] : DbUpdater::getLatestVersionName()),
-        CURLOPT_USERAGENT => 'WallacePOS_Installer'
+        CURLOPT_USERAGENT => 'WebPOS_Installer'
     ));
     curl_exec($curl);
     curl_close($curl);
